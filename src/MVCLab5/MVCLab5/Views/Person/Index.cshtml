@@ -1,0 +1,62 @@
+﻿@model IEnumerable<ModelsandForms.Models.Person>
+    
+@{ 
+    ViewData["Title"] = "PersonDetails";
+}
+
+
+<h2>Person Details</h2>
+<hr/>
+
+    <div class="col-sm-10">
+        @if (Model.Count() == 0)
+        {
+            <p>No person available</p>
+
+        }
+
+        else
+        {
+            <table class="persontable">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Birthday</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var person in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelPerson => person.firstName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelPerson => person.lastName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelPerson => person.birthDay)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelPerson => person.Age)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Information", "ViewPerson", person)
+                            </td>
+                        </tr>
+
+                    }
+                </tbody>
+            </table>
+
+
+        }
+        
+    </div>
+
+<br><br>
+<p>
+    <a asp-action="AddPerson" id="simplebutton">Add A Person</a>
+</p>

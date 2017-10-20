@@ -1,0 +1,16 @@
+﻿@model ModelsandForms.Models.Person
+@{
+    ViewData["Title"] = "ViewPerson";
+}
+
+<h2>Person Detail</h2>
+
+<div>First Name: @Model.firstName</div>
+<div>Last Name: @Model.lastName</div>
+<div>Birthday: @Model.birthDay ("MM/DD/YYYY")</div>
+<div>Age: @Model.Age</div>
+
+<div>
+    <br><br><br/>
+    <a asp-action="Index"  id="simplebutton">Previous Page</a>
+</div>
