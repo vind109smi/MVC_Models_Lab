@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ModelsandForms.Models
+namespace MVCLab5.Models
 {
     public class Person
     {

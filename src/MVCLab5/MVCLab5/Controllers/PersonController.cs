@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using ModelsandForms.Models;
+using MVCLab5.Models;
 
 namespace MVCLab5.Controllers
 {

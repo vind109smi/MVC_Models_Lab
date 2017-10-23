@@ -1,22 +1,23 @@
-﻿@{ 
-    ViewData["Title"] = "DataError";
+﻿@model MVCLab5.Models.ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
 }
 
-<h1 class="text-danger">Error!</h1>
-<h2 class="text-danger">An unexpected error occured during requesting process.</h2>
+<h1 class="text-danger">Error.</h1>
+<h2 class="text-danger">An error occurred while processing your request.</h2>
 
-@if(Model.ShowGetId)
+@if (Model.ShowRequestId)
 {
     <p>
-        <bold>Request the ID:</bold> <code>@Model.GetId</code>
+        <strong>Request ID:</strong> <code>@Model.RequestId</code>
     </p>
-
 }
 
-<h3>More Information</h3>
+<h3>Development Mode</h3>
 <p>
-    Going to <bold>Development</bold> setting will direct the cause of the error.
+    Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.
 </p>
 <p>
-    <bold>Development settings should not allow for such faulty errors. Cannot be enabled in deployed applications!</bold>
+    <strong>Development environment should not be enabled in deployed applications</strong>, as it can result in sensitive information from exceptions being displayed to end users. For local debugging, development environment can be enabled by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>, and restarting the application.
 </p>
+
