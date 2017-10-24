@@ -12,10 +12,8 @@ namespace MVCLab5.Models
         public Person()
         { }
             [Required(ErrorMessage ="Invalid First Name")]
-            [StringLength(2-20)]
              public string firstName { get; set; }
             [Required(ErrorMessage = "Invalid Last Name")]
-            [StringLength(2 - 20)]
             public string lastName { get; set; }
             // Adding a datetype annotation to represent date as input
             [DataType(DataType.Date)]

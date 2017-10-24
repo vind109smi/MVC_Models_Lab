@@ -1,14 +1,19 @@
 ﻿body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-h2 {
+    background-color: indigo;
+    margin: 15px;
     padding: 20px;
-    color: lightgreen;
-    background-color: orange;
-    border-radius: 10px;
+    
 }
 
+header {
+ 
+    text-decoration: none;
+    border: 3px solid purple;
+    color: white;
+    border-radius: 13px;
+    padding: 10px;
+}
 
 
 .time {
@@ -26,6 +31,7 @@ h2 {
     padding: 10px;
 }
 
+
 #boxList {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: blue;
@@ -38,9 +44,37 @@ h2 {
     text-align: center;
 }
 
-#outerBorder {
-    border: 3px solid blue;
-    padding: 13px;
+.formsection {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    border: 3px solid indigo;
     border-radius: 10px;
+    padding: 15px;
+    background-color: lightcoral;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.lastsection {
+    padding: 10px;
+    margin: 12px;
+    border-radius: 10px;
+    border: 3px solid indigo;
+}
+
+
+a:hover {
+    text-decoration: none;
+    background-color: lightblue;
+}
+
+a:active {
+    background-color: orange;
+}
+
+a:link {
     text-decoration: none;
 }

@@ -26,8 +26,8 @@ namespace MVCLab5.Controllers
         {
             if(ModelState.IsValid)
             {
-                persons.Add(p);
-                return View("View the Person", p);
+                persons.Add((p));
+                return View("ViewPerson", p);
             }
             else
             {

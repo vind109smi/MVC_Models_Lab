@@ -15,7 +15,7 @@ namespace MVCLab5.Controllers
             ViewData["Name"] = "MVCLab5";
             // Create a DateTime object to instantiate
             DateTime today = DateTime.Now;
-            ViewData["Current Time"] = today.ToString("HH:mm tt on dddd, MM dd, yyyy");
+           //  ViewData["Current Time"] = today.ToString("HH:mm tt on dddd, MM dd, yyyy");
 
             // Declare currentHour variable and check to see if time fits
             int presentTime = today.Hour;
