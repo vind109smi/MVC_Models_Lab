@@ -1,6 +1,6 @@
 ﻿body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: indigo;
+    background-color: darkorange;
     margin: 15px;
     padding: 20px;
     
@@ -9,7 +9,7 @@
 header {
  
     text-decoration: none;
-    border: 3px solid purple;
+    border: 3px solid darkblue;
     color: white;
     border-radius: 13px;
     padding: 10px;
